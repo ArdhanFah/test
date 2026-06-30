@@ -9,8 +9,8 @@ const getEnv = (key) => {
     }
 };
 
-const SUPABASE_URL = getEnv('VITE_SUPABASE_URL') || 'https://cyrptzbwxohzhqkjquen.supabase.co';
-const SUPABASE_ANON_KEY = getEnv('VITE_SUPABASE_ANON_KEY') || 'sb_publishable_-6OEboAj0o1pZYG4si-o0Q_3xGfV5xr';
+const SUPABASE_URL = getEnv('VITE_SUPABASE_URL') || 'https://rawhejzhqoiehlcfpuki.supabase.co';
+const SUPABASE_ANON_KEY = getEnv('VITE_SUPABASE_ANON_KEY') || 'sb_publishable_2pjq_-5nDnK0V1ehTA-S0Q_iqh20m5B';
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
