@@ -1,4 +1,4 @@
-import { supabase } from './assets/js/services/supabase.js';
+import { supabase } from './supabase.js';
 
 export class FinanceService {
     static async addTransaction(coupleId, userId, data) {

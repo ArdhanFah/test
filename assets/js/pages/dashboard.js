@@ -1,7 +1,7 @@
-import { AuthService } from '../assets/js/services/auth.js';
-import { CoupleService } from '../assets/js/services/couple.js';
-import { ChatService } from '../assets/js/services/chat.js';
-import { NotificationsService } from '../assets/js/services/notifications.js';
+import { AuthService } from '../services/auth.js';
+import { CoupleService } from '../services/couple.js';
+import { ChatService } from '../services/chat.js';
+import { NotificationsService } from '../services/notifications.js';
 
 export function renderDashboard(context) {
     const { user, profile, couple } = context;

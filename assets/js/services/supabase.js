@@ -1,11 +1,16 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/+esm';
 
 // These should come from environment variables in production
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://cyrptzbwxohzhqkjquen.supabase.co';
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable_-6OEboAj0o1pZYG4si-o0Q_3xGfV5xr';
+const getEnv = (key) => {
+    try {
+        return (typeof import.meta !== 'undefined' && import.meta.env) ? import.meta.env[key] : null;
+    } catch (e) {
+        return null;
+    }
+};
 
-// Import Supabase dari CDN
-const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/+esm');
+const SUPABASE_URL = getEnv('VITE_SUPABASE_URL') || 'https://cyrptzbwxohzhqkjquen.supabase.co';
+const SUPABASE_ANON_KEY = getEnv('VITE_SUPABASE_ANON_KEY') || 'sb_publishable_-6OEboAj0o1pZYG4si-o0Q_3xGfV5xr';
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 

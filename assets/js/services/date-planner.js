@@ -1,4 +1,4 @@
-import { supabase } from './assets/js/services/supabase.js';
+import { supabase } from './supabase.js';
 
 export class DatePlannerService {
     static async createDatePlan(coupleId, userId, data) {

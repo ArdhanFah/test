@@ -1,5 +1,5 @@
 // /js/services/couple.js
-import { supabase } from '../assets/js/services/supabase.js';
+import { supabase } from './supabase.js';
 
 export const CoupleService = {
     async createCouple(userId, displayName) {

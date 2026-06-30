@@ -1,4 +1,4 @@
-import { AuthService } from '../assets/js/services/auth.js';
+import { AuthService } from '../services/auth.js';
 
 export function renderLogin() {
     return `

@@ -1,7 +1,13 @@
 export class DeepSeekService {
     constructor() {
         // API Key must come from environment variables
-        this.apiKey = import.meta.env.VITE_DEEPSEEK_API_KEY || '';
+        let apiKey = '';
+        try {
+            if (typeof import.meta !== 'undefined' && import.meta.env) {
+                apiKey = import.meta.env.VITE_DEEPSEEK_API_KEY || '';
+            }
+        } catch (e) {}
+        this.apiKey = apiKey;
         this.apiUrl = 'https://api.deepseek.com/v1';
         this.model = 'deepseek-chat';
     }

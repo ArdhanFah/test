@@ -1,6 +1,6 @@
-import { ChatService } from '../assets/js/services/chat.js';
-import { AuthService } from '../assets/js/services/auth.js';
-import { NotificationsService } from '../assets/js/services/notifications.js';
+import { ChatService } from '../services/chat.js';
+import { AuthService } from '../services/auth.js';
+import { NotificationsService } from '../services/notifications.js';
 
 export function renderChat(context) {
     const { user, couple } = context;

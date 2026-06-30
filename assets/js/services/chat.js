@@ -1,4 +1,4 @@
-import { supabase, Channels } from './assets/js/services/supabase.js';
+import { supabase, Channels } from './supabase.js';
 
 export class ChatService {
     static async sendMessage(coupleId, userId, content, type = 'text', metadata = {}) {

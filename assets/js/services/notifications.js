@@ -1,5 +1,5 @@
 // /js/services/notifications.js
-import { supabase, Channels } from '../assets/js/services/supabase.js';
+import { supabase, Channels } from './supabase.js';
 
 export const NotificationsService = {
     async createNotification(userId, data) {

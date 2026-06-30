@@ -1,5 +1,5 @@
-import { AuthService } from '../assets/js/services/auth.js';
-import { CoupleService } from '../assets/js/services/couple.js';
+import { AuthService } from '../services/auth.js';
+import { CoupleService } from '../services/couple.js';
 
 export function renderRegister() {
     return `

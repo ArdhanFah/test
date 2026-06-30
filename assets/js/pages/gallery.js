@@ -1,6 +1,6 @@
-import { GalleryService } from '../assets/js/services/gallery.js';
-import { AuthService } from '../assets/js/services/auth.js';
-import { NotificationsService } from '../assets/js/services/notifications.js';
+import { GalleryService } from '../services/gallery.js';
+import { AuthService } from '../services/auth.js';
+import { NotificationsService } from '../services/notifications.js';
 
 export function renderGallery(context) {
     const { user, couple } = context;
